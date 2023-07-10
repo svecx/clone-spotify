@@ -1,0 +1,269 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(120deg, #281e5e, #c35e92);
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  padding: 45px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 2;
+  }
+}
+
+.sub-title {
+  margin-bottom: 20px;
+}
+
+.song-list,
+.popular-songs,
+.playlist {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.song-card {
+  padding: 15px;
+  background-color: rgba(179, 179, 179, 0.2);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.song-card h3,
+.song-card p {
+  margin-bottom: 5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.song-card:hover h3,
+.song-card:hover p {
+  color: #1db954;
+}
+
+.song-card img {
+  border-style: none;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.song-card:hover img {
+  filter: brightness(0.9);
+  transform: scale(1.1);
+}
+
+.card {
+  background-color: rgba(171, 121, 121, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  margin: 20px auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.container.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.music-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.album-art img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  filter: brightness(0.8) saturate(120%);
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.album-art:hover img {
+  filter: brightness(1) saturate(100%);
+  transform: scale(1.1);
+}
+
+.player-controls {
+  margin-top: 20px;
+}
+
+.card {
+  background-color: rgba(171, 121, 121, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  margin: 20px auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.container.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.music-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.album-art img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  filter: brightness(0.8) saturate(120%);
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.album-art:hover img {
+  filter: brightness(1) saturate(100%);
+  transform: scale(1.1);
+}
+
+.player-controls {
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.buttons button {
+  margin: 0 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.buttons button:hover {
+  color: #1db954;
+}
+
+.btn-dark {
+  color: #333;
+}
+
+.btn-dark:hover {
+  color: #1db954;
+}
+
+.song-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 300px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #1db954;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.buttons button {
+  margin-right: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.buttons button:hover {
+  color: #1db954;
+}
+
+.btn-dark {
+  color: #333;
+}
+
+.btn-dark:hover {
+  color: #1db954;
+}
+
+.song-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

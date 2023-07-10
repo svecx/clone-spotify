@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spotify Page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;600;700;800&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const songCards = document.querySelectorAll(".song-card");
+
+        songCards.forEach(function (card) {
+          const musicPlayerOverlay = card.querySelector(
+            ".music-player-overlay"
+          );
+
+          card.addEventListener("click", function () {
+            musicPlayerOverlay.style.opacity = 1;
+          });
+
+          card.addEventListener("mouseleave", function () {
+            musicPlayerOverlay.style.opacity = 0;
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Spotify</h1>
+      <div class="wrap">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="sub-title">Semua Lagu</h2>
+            <div class="song-list">
+              <div class="song-card">
+                <h3>bedroom</h3>
+                <p>Burbank</p>
+                <a
+                  class="center"
+                  href="https://open.spotify.com/album/6d0FJdfbBcFSAPkpHTVgFt?si=ZC5GXdBYT8uTXoDQbZo5Xw"
+                >
+                  <img
+                    src="https://i.scdn.co/image/ab67616d0000b273b65faad4e86af280cb2a84a5"
+                    alt="Burbank"
+                  />
+                </a>
+                <div class="music-player-overlay">
+                  <p class="music-player-text">Music Player</p>
+                </div>
+              </div>
+              <div class="song-card">
+                <h3>Perayaan Rasa</h3>
+                <p>Febinda Tito</p>
+                <a
+                  class="center"
+                  href="https://open.spotify.com/album/1uIVUcQP2SOUeeAnlLdqNQ?si=IgkgLggvSZ-01nQ6uH8liQ"
+                >
+                  <img
+                    src="https://i.scdn.co/image/ab67616d0000b273e58b92d59b3133edf78d394f"
+                    alt="Febinda Tito"
+                  />
+                </a>
+                <div class="music-player-overlay">
+                  <p class="music-player-text">Music Player</p>
+                </div>
+              </div>
+              <div class="song-card">
+                <h3>Amen</h3>
+                <p>Rich Brian</p>
+                <a
+                  class="center"
+                  href="https://open.spotify.com/album/4Y2V5TihhuWyKGnUzLQEpH?si=aaFhzKefReqrgPeBEotxfg"
+                >
+                  <img
+                    src="https://i.scdn.co/image/ab67616d00001e029143032571ada4b5dd581f5c"
+                    alt="Rich Brian"
+                  />
+                </a>
+                <div class="music-player-overlay">
+                  <p class="music-player-text">Music Player</p>
+                </div>
+              </div>
+              <div class="song-card">
+                <h3>ハッピーエンド</h3>
+                <p>back number</p>
+                <a
+                  class="center"
+                  href="https://open.spotify.com/album/756KBTfY0YiHQNkg3UJhR6?si=GqXFj92hTF6gMBOF_qjqZQ"
+                >
+                  <img
+                    src="https://i.scdn.co/image/ab67616d0000b273e09353d6028fda18c3699085"
+                    alt="back number"
+                  />
+                </a>
+                <div class="music-player-overlay">
+                  <p class="music-player-text">Music Player</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h2 class="sub-title">Lagu Sering Diputar</h2>
+            <div class="popular-songs">
+              <div class="song-card">
+                <h3>ハッピーエンド</h3>
+                <p>back number</p>
+                <a
+                  class="center"
+                  href="https://open.spotify.com/album/756KBTfY0YiHQNkg3UJhR6?si=GqXFj92hTF6gMBOF_qjqZQ"
+                >
+                  <img
+                    src="https://i.scdn.co/image/ab67616d0000b273e09353d6028fda18c3699085"
+                    alt="back number"
+                  />
+                </a>
+                <div class="music-player-overlay">
+                  <p class="music-player-text">Music Player</p>
+                </div>
+              </div>
+              <div class="song-card">
+                <h3>Perayaan Rasa</h3>
+                <p>Febinda Tito</p>
+                <a
+                  class="center"
+                  href="https://open.spotify.com/album/1uIVUcQP2SOUeeAnlLdqNQ?si=IgkgLggvSZ-01nQ6uH8liQ"
+                >
+                  <img
+                    src="https://i.scdn.co/image/ab67616d0000b273e58b92d59b3133edf78d394f"
+                    alt="Febinda Tito"
+                  />
+                </a>
+                <div class="music-player-overlay">
+                  <p class="music-player-text">Music Player</p>
+                </div>
+              </div>
+              <div class="song-card">
+                <h3>bedroom</h3>
+                <p>Burbank</p>
+                <a
+                  class="center"
+                  href="https://open.spotify.com/album/6d0FJdfbBcFSAPkpHTVgFt?si=ZC5GXdBYT8uTXoDQbZo5Xw"
+                >
+                  <img
+                    src="https://i.scdn.co/image/ab67616d0000b273b65faad4e86af280cb2a84a5"
+                    alt="Burbank"
+                  />
+                </a>
+                <div class="music-player-overlay">
+                  <p class="music-player-text">Music Player</p>
+                </div>
+              </div>
+              <div class="song-card">
+                <h3>🔱 Hardstyle</h3>
+                <p>Den Haku</p>
+                <a
+                  class="center"
+                  href="https://open.spotify.com/playlist/4DR70Tz5fPxGGAzGPWzTdo?si=49ca1d94884946a5"
+                >
+                  <img
+                    src="https://i.scdn.co/image/ab67706c0000da845c2faf6b91cd982404556b1d"
+                    alt="Den Haku"
+                  />
+                </a>
+                <div class="music-player-overlay">
+                  <p class="music-player-text">Music Player</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="sub-title">Daftar Putar Anda</h2>
+            <div class="playlist">
+              <div class="song-card">
+                <h3>苦茶子</h3>
+                <p>Starling8</p>
+              </div>
+              <div class="song-card">
+                <h3>About Love</h3>
+                <p>Grant Perez</p>
+              </div>
+              <div class="song-card">
+                <h3>Promise Me</h3>
+                <p>xxxmiracle</p>
+              </div>
+              <div class="song-card">
+                <h3>Promise Me</h3>
+                <p>xxxmiracle</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <h2 class="sub-title">Daftar Rekomendasi Anda</h2>
+            <div class="playlist">
+              <div class="song-card">
+                <h3>苦茶子</h3>
+                <p>Starling8</p>
+              </div>
+              <div class="song-card">
+                <h3>苦茶子</h3>
+                <p>Starling8</p>
+              </div>
+              <div class="song-card">
+                <h3>About Love</h3>
+                <p>Grant Perez</p>
+              </div>
+              <div class="song-card">
+                <h3>Promise Me</h3>
+                <p>xxxmiracle</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <h2 class="sub-title">Daftar Paling Hits</h2>
+            <div class="playlist">
+              <div class="song-card">
+                <h3>苦茶子</h3>
+                <p>Starling8</p>
+              </div>
+              <div class="song-card">
+                <h3>About Love</h3>
+                <p>Grant Perez</p>
+              </div>
+              <div class="song-card">
+                <h3>About Love</h3>
+                <p>Grant Perez</p>
+              </div>
+              <div class="song-card">
+                <h3>Promise Me</h3>
+                <p>xxxmiracle</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <h2 class="sub-title">Daftar Putar Populer</h2>
+            <div class="playlist">
+              <div class="song-card">
+                <h3>苦茶子</h3>
+                <p>Starling8</p>
+              </div>
+              <div class="song-card">
+                <h3>About Love</h3>
+                <p>Grant Perez</p>
+              </div>
+              <div class="song-card">
+                <h3>About Love</h3>
+                <p>Grant Perez</p>
+              </div>
+              <div class="song-card">
+                <h3>Promise Me</h3>
+                <p>xxxmiracle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="container player">
+          <div class="music-player">
+            <div class="album-art">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02658ca1eea8db296484bfac95"
+                alt="Album Cover"
+              />
+            </div>
+            <div class="player-controls">
+              <h3 class="song-title">Bobo</h3>
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+              <div class="buttons">
+                <button class="btn btn-dark prev">
+                  <i class="fas fa-step-backward"></i>
+                </button>
+                <button class="btn btn-dark play">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="btn btn-dark next">
+                  <i class="fas fa-step-forward"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
