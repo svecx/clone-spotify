@@ -1,0 +1,30 @@
+GET http://localhost:5000/playlist
+
+###
+GET http://localhost:5000/playlist/1
+
+###
+post http://localhost:5000/playlist
+Content-Type: application/json
+
+{
+    "judul" : "Lethocerus deyrollei",
+    "artis" : ["Aimer"],
+    "url" : "https://open.spotify.com/track/2HovXsvcdJur52BOcYGydz?si=d76d4b5706234600"
+
+}
+
+# ###
+# PATCH  http://localhost:5000/playlist/3
+# Content-Type: application/json
+
+# {
+#    "judul" : "Kota hujan salju",
+#     "artis" : ["Aimer"],
+#     "url" : "https://open.spotify.com/track/3sAyTNkMmHHYMVffFn0N7N?si=28a584a8cd9b4a6b"
+# }
+
+# ###
+# DELETE http://localhost:5000/playlist/3
+
+
