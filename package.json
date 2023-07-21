@@ -1,7 +1,7 @@
 {
   "name": "express-spotify",
   "version": "1.0.0",
-  "description": "",
+  "description": "author sinatra",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
