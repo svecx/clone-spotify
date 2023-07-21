@@ -1,0 +1,106 @@
+[{
+  "_id": 1,
+  "name": "Aimer",
+  "dateOfBirth": {
+    "$date": "1990-09-07T00:00:00.000Z"
+  },
+  "genre": [
+    "Pop",
+    "Jazz",
+    "Rock"
+  ]
+},
+{
+  "_id": 2,
+  "name": "Yoasobi",
+  "dateOfBirth": {
+    "$date": "2000-09-25T00:00:00.000Z"
+  },
+  "genre": [
+    "Pop"
+  ]
+},
+{
+  "_id": 3,
+  "name": "Silent Siren",
+  "dateOfBirth": {
+    "$date": "1992-12-28T00:00:00.000Z"
+  },
+  "genre": [
+    "Rock",
+    "J-pop"
+  ]
+},
+{
+  "_id": 4,
+  "name": "the peggies",
+  "dateOfBirth": {
+    "$date": "1995-12-02T00:00:00.000Z"
+  },
+  "genre": [
+    "Alternative rock",
+    "Pop rock"
+  ]
+},
+{
+  "_id": 5,
+  "name": "Majiko",
+  "dateOfBirth": {
+    "$date": "1992-10-28T00:00:00.000Z"
+  },
+  "genre": [
+    "Alternative rock",
+    "Electronica",
+    "Indie"
+  ]
+},
+{
+  "_id": 6,
+  "name": "Jeff Bernat",
+  "dateOfBirth": {
+    "$date": "1987-02-14T00:00:00.000Z"
+  },
+  "genre": [
+    "R&B,Soul"
+  ]
+},
+{
+  "_id": 7,
+  "name": "Olivia Rodrigo",
+  "dateOfBirth": {
+    "$date": "1989-03-30T00:00:00.000Z"
+  },
+  "genre": [
+    "Pop,R&B"
+  ]
+},
+{
+  "_id": 8,
+  "name": "The Weeknd",
+  "dateOfBirth": {
+    "$date": "1999-02-10T00:00:00.000Z"
+  },
+  "genre": [
+    " R&B,Soul, Elektronik"
+  ]
+},
+{
+  "_id": 9,
+  "name": "Doja Cat",
+  "dateOfBirth": {
+    "$date": "1995-10-21T00:00:00.000Z"
+  },
+  "genre": [
+    "Hip hop,R&B, pop"
+  ]
+},
+{
+  "_id": 10,
+  "name": "keshi",
+  "dateOfBirth": {
+    "$date": "1994-11-04T00:00:00.000Z"
+  },
+  "genre": [
+    "R&B, hip hop, alternatif"
+  ]
+}]
